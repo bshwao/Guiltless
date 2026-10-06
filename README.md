@@ -1,6 +1,6 @@
-# Crownless
+# Guiltless
 
-Crownless is a grounded medieval-fantasy Roblox MMO prototype. This Rojo project contains the shared Greyfen hub, its first mine and vault blockout, four furnished buildings, starter dialogue, role kits, and a custom four-role party finder.
+Guiltless is a grounded medieval-fantasy Roblox MMO prototype. This Rojo project contains the shared Greyfen hub, its first mine and vault blockout, four furnished buildings, starter dialogue, role kits, and a custom four-role party finder.
 
 ## Greyfen
 
@@ -34,7 +34,7 @@ Dungeon enemy spawning, the vault boss encounter, repairs, item durability, corp
 - Your avatar portrait, Roblox display name, saved character level, and XP appear in the header.
 - Confirmed damage numbers and rolling DPS float at the hit location. Only health actually removed by the server is counted.
 
-The game hides Roblox's top bar on startup to prevent it covering the HUD. Roblox's `TopbarEnabled` switch also hides Roblox's built-in chat, player list, and backpack. Crownless replaces those entry points with custom chat, party, map, armory, and action-bar UI; **Settings → Roblox top bar** restores the platform bar if desired.
+The game hides Roblox's top bar on startup to prevent it covering the HUD. Roblox's `TopbarEnabled` switch also hides Roblox's built-in chat, player list, and backpack. Guiltless replaces those entry points with custom chat, party, map, armory, and action-bar UI; **Settings → Roblox top bar** restores the platform bar if desired.
 
 Background music uses [**Medieval Market D**](https://create.roblox.com/store/asset/1847223666/Medieval-Market-d-OL) from the Roblox Creator Store (asset `1847223666`). Players can mute it or adjust volume in **Settings**. Creator Store audio is subject to Roblox asset permissions and availability.
 
