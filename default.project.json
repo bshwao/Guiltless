@@ -1,0 +1,73 @@
+{
+  "name": "Crownless",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Assets": {
+        "$className": "Folder",
+        "Weapons": { "$path": "assets/equipment/weapons" },
+        "Armor": { "$path": "assets/equipment/armor" },
+        "Offhands": { "$path": "assets/equipment/offhands" }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$path": "src/world"
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "Ambient": [0.28, 0.27, 0.24],
+        "Brightness": 2.1,
+        "ClockTime": 16.2,
+        "EnvironmentDiffuseScale": 0.35,
+        "EnvironmentSpecularScale": 0.25,
+        "FogColor": [0.35, 0.39, 0.37],
+        "FogEnd": 1000,
+        "FogStart": 120,
+        "GlobalShadows": true,
+        "OutdoorAmbient": [0.38, 0.39, 0.34]
+      },
+      "Atmosphere": {
+        "$className": "Atmosphere",
+        "$properties": {
+          "Color": [0.75, 0.72, 0.62],
+          "Decay": [0.40, 0.47, 0.42],
+          "Density": 0.22,
+          "Glare": 0.08,
+          "Haze": 1.5,
+          "Offset": 0.05
+        }
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "$properties": {
+        "CameraMode": "Classic",
+        "CameraMinZoomDistance": 6,
+        "CameraMaxZoomDistance": 24,
+        "LoadCharacterAppearance": false
+      },
+      "StarterCharacter": {
+        "$path": "src/character/StarterCharacter.rbxmx"
+      },
+      "StarterCharacterScripts": {
+        "$className": "StarterCharacterScripts",
+        "$path": "src/character/scripts"
+      },
+      "StarterPlayerScripts": {
+        "$path": "src/client"
+      }
+    }
+  }
+}

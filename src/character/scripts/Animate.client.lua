@@ -1,0 +1,3 @@
+-- Intentionally replaces Roblox's default Animate LocalScript on every spawn.
+-- CombatAnimations in StarterPlayerScripts animates all Crownless R6 characters,
+-- including locomotion and combat, with no uploaded animation assets required.

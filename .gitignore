@@ -1,0 +1,10 @@
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+!src/character/StarterCharacter.rbxmx
+!assets/equipment/**/*.rbxmx
+.DS_Store
+node_modules/
+build/
+sourcemap.json

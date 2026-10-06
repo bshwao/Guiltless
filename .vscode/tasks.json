@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rojo: Serve",
+      "type": "shell",
+      "command": "rojo serve default.project.json",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Rojo: Build place file",
+      "type": "shell",
+      "command": "rojo build default.project.json -o build/Crownless.rbxlx",
+      "problemMatcher": []
+    },
+    {
+      "label": "Luau: Generate Rojo sourcemap",
+      "type": "shell",
+      "command": "rojo sourcemap --watch default.project.json --output sourcemap.json",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}
