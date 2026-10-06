@@ -2,18 +2,6 @@
 
 Crownless is a grounded medieval-fantasy Roblox MMO prototype. This Rojo project contains the shared Greyfen hub, its first mine and vault blockout, four furnished buildings, starter dialogue, role kits, and a custom four-role party finder.
 
-## Open in Roblox Studio
-
-1. Open this project folder in VS Code.
-2. Install Rojo 7 (`aftman install` is configured here) and the Rojo Studio plugin.
-3. Sync the complete `default.project.json` tree. It includes an R6 `StarterCharacter`, compatible avatar cosmetics, and procedural movement/combat animation scripts. R6 is enforced by this source character.
-4. Use **Terminal → Run Task → Rojo: Build place file** to create `build/Crownless.rbxlx`, or start **Rojo: Serve** and connect the Studio plugin to `localhost:34872`.
-5. Press **Play**. NPC rigs, dialogue prompts, player armor and weapons, the action bar, chat, music, and UI are created by the runtime scripts.
-
-`src/world/CrownlessWorld.model.json` is the editable, static map model. The source currently generates 1,411 map pieces. Open `build/Crownless.rbxlx` for the updated place. `Crownless.rbxl` is an earlier place snapshot; sync/build the project source to load these updates.
-
-**Build note:** Rojo 7.7.1 successfully builds this project. If the global `rojo` shim reports `ERROR home directory not found`, use the installed executable at `%USERPROFILE%\.rokit\tool-storage\rojo-rbx\rojo\7.7.1\rojo.exe` to run the same build or serve command.
-
 ## Greyfen
 
 - A continuous stone town wall with a single eastern mine gate, an arrival marker, market square, well, southern bridge, and accessible streets.
