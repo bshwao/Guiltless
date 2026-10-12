@@ -1,0 +1,11 @@
+[package]
+name = "bshwao/guiltless"
+version = "0.0.0"
+realm = "shared"
+registry = "https://github.com/UpliftGames/wally-index"
+private = true
+
+# Phase 0 uses plain modules; add packages only when they earn their place.
+[dependencies]
+
+[server-dependencies]

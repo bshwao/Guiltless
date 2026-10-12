@@ -1,0 +1,66 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Tooling: Install Rokit tools",
+      "type": "process",
+      "command": "rokit",
+      "args": ["install"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Wally: Install packages",
+      "type": "process",
+      "command": "wally",
+      "args": ["install"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Rojo: Serve",
+      "type": "process",
+      "command": "rojo",
+      "args": ["serve", "default.project.json"],
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {"reveal": "always", "panel": "dedicated"}
+    },
+    {
+      "label": "Rojo: Build place",
+      "type": "process",
+      "command": "powershell",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "scripts/Build.ps1"],
+      "group": {"kind": "build", "isDefault": true},
+      "problemMatcher": []
+    },
+    {
+      "label": "Studio: Test RemoteEvent",
+      "type": "process",
+      "command": "powershell",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "scripts/Smoke.ps1"],
+      "dependsOn": "Rojo: Build place",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Rojo: Generate sourcemap",
+      "type": "process",
+      "command": "rojo",
+      "args": ["sourcemap", "default.project.json", "--include-non-scripts", "--output", "sourcemap.json"],
+      "problemMatcher": []
+    },
+    {
+      "label": "StyLua: Format",
+      "type": "process",
+      "command": "stylua",
+      "args": ["src", "scripts/StudioSmoke.luau"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Checks: Format, lint, and types",
+      "type": "process",
+      "command": "powershell",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "scripts/Check.ps1"],
+      "problemMatcher": []
+    }
+  ]
+}

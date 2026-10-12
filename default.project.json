@@ -1,17 +1,42 @@
 {
   "name": "Guiltless",
+  "serveAddress": "127.0.0.1",
+  "servePort": 34872,
   "tree": {
     "$className": "DataModel",
+
+    "HttpService": {
+      "$properties": {
+        "HttpEnabled": true
+      }
+    },
 
     "ReplicatedStorage": {
       "Shared": {
         "$path": "src/shared"
+      },
+      "Packages": {
+        "$className": "Folder",
+        "$path": "Packages"
+      },
+      "Remotes": {
+        "$className": "Folder",
+        "Handshake": {
+          "$className": "RemoteEvent"
+        }
       }
     },
 
     "ServerScriptService": {
       "Server": {
         "$path": "src/server"
+      }
+    },
+
+    "ServerStorage": {
+      "ServerPackages": {
+        "$className": "Folder",
+        "$path": "ServerPackages"
       }
     },
 
@@ -24,6 +49,7 @@
     },
 
     "Workspace": {
+      "$ignoreUnknownInstances": true,
       "$properties": {
         "FilteringEnabled": true
       },
@@ -47,6 +73,16 @@
             20,
             512
           ]
+        }
+      },
+      "Spawn": {
+        "$className": "SpawnLocation",
+        "$properties": {
+          "Anchored": true,
+          "Neutral": true,
+          "Duration": 0,
+          "Position": [0, 0.5, 0],
+          "Size": [6, 1, 6]
         }
       }
     },

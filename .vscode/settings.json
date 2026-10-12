@@ -1,3 +1,22 @@
 {
-    "stylua.targetReleaseVersion": "latest"
+  "files.eol": "\n",
+  "files.associations": {
+    "*.lua": "luau",
+    "*.luau": "luau"
+  },
+  "[luau]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
+  "stylua.searchBinaryInPATH": true,
+  "stylua.targetReleaseVersion": "2.6.0",
+  "luau-lsp.platform.type": "roblox",
+  "luau-lsp.sourcemap.enabled": true,
+  "luau-lsp.sourcemap.autogenerate": true,
+  "luau-lsp.sourcemap.rojoPath": "rojo",
+  "luau-lsp.sourcemap.rojoProjectFile": "default.project.json",
+  "luau-lsp.sourcemap.includeNonScripts": true,
+  "luau-lsp.sourcemap.sourcemapFile": "sourcemap.json"
 }

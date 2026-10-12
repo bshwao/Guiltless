@@ -1,8 +1,15 @@
-# Project place file
+# Generated place files, API definitions, and Rojo mapping
+/build/
+/.tools/
 /Guiltless.rbxlx
+/sourcemap.json
 
-# Roblox Studio lock files
-/*.rbxlx.lock
-/*.rbxl.lock
+# Wally installs; Rojo supplies empty folders before dependencies are added.
+/Packages/
+/ServerPackages/
 
-sourcemap.json
+# Roblox Studio lock and autosave files
+*.rbxlx.lock
+*.rbxl.lock
+*.rbxlx.autosave
+*.rbxl.autosave
